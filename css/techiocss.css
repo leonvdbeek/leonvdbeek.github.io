@@ -8,7 +8,7 @@ footer{
 
 .hovertext {
      padding: 0;
-     background-color: darkgrey;
+     background-color: grey;
    }
 
    .hovertext:hover img {
@@ -22,7 +22,7 @@ footer{
    .hovertext img {
      padding: 0;
      width: 100%;
-     display: block;
+
      opacity: 1;
    }
 
@@ -37,11 +37,11 @@ footer{
    .work-text-content {
      position: absolute;
      color: white;
-     left: 0;
-     top: 25%;
-      right: 0;
-      bottom: 0;
-      font-size: 24px;
-      text-align: center;
-      opacity: 0;
-      }
+     left: 30px;
+     top: 20%;
+     right: 30px;
+     bottom: 0;
+     font-size: 20px;
+     text-align: center;
+     opacity: 0;
+   }
