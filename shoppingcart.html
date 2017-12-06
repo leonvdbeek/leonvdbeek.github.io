@@ -12,76 +12,85 @@
   <body>
 
 <!--- this is the nav bar --->
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Tech.io components</a>
+          <a class="navbar-brand" href="index.html">Tech.io</a>
         </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="howdoesitwork.html">How does it work?</a></li>
           </ul>
-          <form class="navbar-form navbar-left">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-              </ul>
-            </li>
+            <li><a class=" active btn btn-default btn-lg glyphicon glyphicon-shopping-cart cartbutton" href="shoppingcart.html"></a></li>
           </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+        </div><!--/.nav-collapse -->
+      </div>
     </nav>
 
 <!--- End of the navbar --->
-
-
-<div class="container">
-  <div class="jumbotron" >
-    <h2 align="center">
-      How does it work?
-    </h2>
-    <p align="center" >Tech.io components is a small shop that orders the components we sell from our Chinese suppliers. The difference between us and them is that we are based in Europe and that we can offer you very short delivery times for your components!
-    </p>
-    <p align="center"><a class="btn btn-primary btn-lg" href="index.html" role="button">Back to the shop!</a></p>
+<div id="wrap">
+  <div id="main" class="container-fluid">
+    <div class="container">
+	<table id="cart" class="table table-hover table-condensed">
+    				<thead>
+						<tr>
+							<th style="width:50%">Product</th>
+							<th style="width:10%">Price</th>
+							<th style="width:8%">Quantity</th>
+							<th style="width:22%" class="text-center">Subtotal</th>
+							<th style="width:10%"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td data-th="Product">
+								<div class="row">
+									<div class="col-sm-2 hidden-xs"><img src="img/arduinonano.jpg" alt="Arduino Nano" class="img-responsive"/></div>
+									<div class="col-sm-10">
+										<h4 class="nomargin">Arduino Nano</h4>
+										<p>This is a smaller version of the well-known Arduino Uno. It is the core of many DIY projects because of its low cost and high efficiency.</p>
+									</div>
+								</div>
+							</td>
+							<td data-th="Price">€ 2,00</td>
+							<td data-th="Quantity">
+								<input type="number" class="form-control text-center" value="1">
+							</td>
+							<td data-th="Subtotal" class="text-center">2,00</td>
+							<td class="actions" data-th="">
+								<a class="btn btn-info"><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></a>
+								<a class="btn btn-danger"><span class="glyphicon glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+							</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr class="visible-xs">
+							<td class="text-center"><strong>Total 1.99</strong></td>
+						</tr>
+						<tr>
+							<td><a href="index.html" class="btn btn-primary"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+							<td colspan="2" class="hidden-xs"></td>
+							<td class="hidden-xs text-center"><strong>Total € 2,00</strong></td>
+							<td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+						</tr>
+					</tfoot>
+				</table>
+</div>
   </div>
 </div>
-<!--- footer --->
 
-<footer id="footer" class="bs-docs-footer">
+<!--- footer --->
+</div>
+</div>
+<footer id="footer" class="footer">
   <div class="container">
     <p>
       Designed and built with all the love in the world by Léon van de Beek for the course WebTechnology (2ID50) at the Eindhoven University of Technology.
