@@ -57,56 +57,62 @@
   <div class="row">
     <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
-        <div align = "center" class="hovertext">
-          <img align = "center" src="img/arduinonano.jpg" />
-          <div class="work-text-content">
-            <p>This is a smaller version of the well-known Arduino Uno. It is the core of many DIY projects because of its low cost and high efficiency.</p>
-          </div>
-        </div>
+        <img align = "center" src="img/arduinonano.jpg" />
         <div class="caption">
           <h3 align="center">Arduino Nano</h3>
-          <p align="center"><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
-          <form action="/action_page.php">
-            Quantity (between 1 and 5):
-            <input type="number" name="quantity" min="1" max="5">
-            <input type="submit">
-          </form>
+          <p align="center">
+            <a href="#" class="btn btn-primary infobutton" role="button">More info</a>
+            Amount:<input id=number type="number" min="1" value="1">
+            </input>
+            <a href="#" class="btn btn-primary addtocartbutton" role="button" data-toggle="modal" data-target="#myModal">Add to cart</a>
+           </p>
         </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <div align = "center">
-          <img align = "center" src="img/arduinonano.jpg" />
-          <div >
-            <p>This is a smaller version of the well-known Arduino Uno. It is the core of many DIY projects because of its low cost and high efficiency.</p>
-          </div>
-        </div>
-        <div class="caption">
-          <h3 align="center">Arduino Nano</h3>
-          <p align="center"><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
-          <form action="/action_page.php">
-            Quantity (between 1 and 5):
-            <input type="number" name="quantity" min="1" max="5">
-            <input type="submit">
-          </form>
+        <div class="info" style="display:none">
+            <p align="center">This is a smaller version of the well-known Arduino Uno. It is the core of many DIY projects because of its low cost and high efficiency.</p>
         </div>
       </div>
     </div>
   </div>
 </div>
-<form action="/action_page.php">
-  Quantity (between 1 and 5):
-  <input type="number" name="quantity" min="1" max="5">
-  <input type="submit">
-</form>
+
+
 <!--- End of all the content --->
 
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 align="center" class="modal-title" id="myModalLabel">Item(s) succesfully added to cart!</h4>
+      </div>
+      <div class="modal-body">
+          <div class="row">
+            <div class="col-xs-4">
+              <button align="center" type="button" class="btn btn-default" data-dismiss="modal">continue shopping</button>
+            </div>
+            <div class="col-xs-4">
+               <p>Do you want to continue shopping or go to checkout?</p>
+            </div>
+            <div class="col-xs-4">
+              <button align="right" type="button" class="btn btn-primary">Go to checkout</button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <!--- footer --->
+<a name="footer"></a>
 <footer id="footer" class="bs-docs-footer">
   <div class="container">
     <p>
-      Designed and built with all the love in the world by Léon van de Beek for the course WebTechnology (2ID50) at the Eindhoven University of Technology.
+      Designed and built with all the love in the world by Léon van de Beek for the course WebTechnology (2ID60) at the Eindhoven University of Technology.
     </p>
     <p align="center">
       Copyright © 2017 Léon van de Beek

@@ -1,6 +1,13 @@
 $(document).ready(() => {
-  $('.login-button').on('click', () => {
-    $('.login-form').toggle();
+  $('.infobutton').on('click', () => {
+    $('.info').slideToggle();
+
+  })
+  $('.addtocartbutton').on('click', () => {
+    BootstrapDialog.show({
+            message: 'Hi Apple!'
+        });
+
   })
 
 
