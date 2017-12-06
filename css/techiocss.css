@@ -11,7 +11,7 @@ footer{
 }
 
 #number{
-  margin: 1em;
+  margin: 0.5em;
   width: 3em;
 }
 
@@ -21,4 +21,25 @@ footer{
    overflow: auto;
    overflow-y: auto;
    margin: auto;
+}
+
+.info {
+    color: black;
+    font-size: large;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    right: 10%;
+}
+
+.container2 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+    width:  500px;
+    height: 275px;
 }
