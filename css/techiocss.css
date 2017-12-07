@@ -93,3 +93,7 @@ body {
     color: black;
     background-color: #D9EDF7;
 }
+.navbar-toggle{
+  background-color: #D9EDF7;
+  border: none;
+}
